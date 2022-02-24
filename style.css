@@ -1,0 +1,6 @@
+.button div{
+    display: inline-block;
+}
+.button div button{
+    padding: 15px;
+}
