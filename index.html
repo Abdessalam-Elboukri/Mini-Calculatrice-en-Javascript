@@ -4,36 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Mini-Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
-<body>
-    <main class="container">
-        <div class="d-flex justify-content-center align-items-center vh-100">
-            <div class="col-5">
-                <div class="rounded-2 p-2" style="border: 2px solid orange;">
-                    <div class="w-100 rounded-1 p-1" style="border:3px dashed black; height:40px">
+<body >
+    <main class="d-flex justify-content-center align-items-center vh-100">
+        <div class="col-md-6 col-lg-5 col-sm-8 col-11 ">
+            <div class="rounded p-sm-3 p-2 calc-container">
+                <div class="p-2 rounded ecran d-flex align-items-center">
+                    <span>sss</span>
+                </div>
+                <div class="mt-5">
+                    <div class="text-center " >
+                        <input type="button" value="(" class="col-2 p-2 text-center"> <i></i>
+                        <input type="button" value=")" class="col-2 p-2 text-center">
+                        <input type="button" value="#" class="col-2 p-2 text-center">
+                        <input type="button" value="#" class="col-2 p-2 text-center">
+                        <input type="button" value="#" class="col-2 p-2 text-center">
                     </div>
-                    <div class="button">
-                        <div>
-                            <input type="number" value="1" >
-                            <input type="number" value="2" >
-                            <input type="number" value="3" >
-                            <input type="number" value="C" >
-                            <input type="number" value="4" >
-                            <input type="number" value="5" >
-                            <input type="number" value="6" >
-                            <input type="number" value="x" >
-                            <input type="number" value="7" >
-                            <input type="number" value="8" >
-                            <input type="number" value="9" >
-                            <input type="number" value="/" >
-                            <input type="number" value="." >
-                            <input type="number" value="0" >
-
-                    </div>
+                        <div class="text-center mt-2" >
+                            <input type="button" value="1" class="col-2 p-2 text-center">
+                            <input type="button" value="2" class="col-2 p-2 text-center">
+                            <input type="button" value="3" class="col-2 p-2 text-center">
+                            <input type="button" value="x" class="col-2 p-2 text-center">
+                            <input type="button" value="/" class="col-2 p-2 text-center">
+                        </div>
+                        <div class="text-center mt-2" >
+                            <input type="button" value="4" class="col-2 p-2 text-center">
+                            <input type="button" value="5" class="col-2 p-2 text-center">
+                            <input type="button" value="6" class="col-2 p-2 text-center">
+                            <input type="button" value="-" class="col-2 p-2 text-center">
+                            <input type="button" value="%" class="col-2 p-2 text-center">
+                        </div>
+                        <div class="text-center mt-2" >
+                            <input type="button" value="7" class="col-2 p-2 text-center">
+                            <input type="button" value="8" class="col-2 p-2 text-center">
+                            <input type="button" value="9" class="col-2 p-2 text-center">
+                            <input type="button" value="+" class="col-2 p-2 text-center">
+                            <input type="button" value="x²" class="col-2 p-2 text-center">
+                        </div>
+                        <div class="text-center mt-2" >
+                            <input type="button" value="00" class="col-2 p-2 text-center">
+                            <input type="button" value="0" class="col-2 p-2 text-center">
+                            <input type="button" value="." class="col-2 p-2 text-center">
+                            <input type="button" value="=" class="col-4 p-2 text-center" style="padding: 0 8px;">
+                        </div>
                 </div>
             </div>
         </div>
