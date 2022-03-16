@@ -1,50 +1,130 @@
-*{
-    box-sizing: border-box;
+body{
+
 }
-main{
-    background: url(./1.png);
-    background-size: cover;
-}
-.ecran{
-    background-color: rgb(250, 255, 185);
-    height: 100px;
-}
-.calc-container{
-    transition: all 600ms ease-in;
-    background:url(./2.png);
-    box-shadow: 8px 8px 0px rgb(78, 78, 78);
-}
-.calc-container:hover{
-    box-shadow: -8px -8px 0px rgb(78, 78, 78);
-}
-.calc-container input{
-    position: relative;
+
+main {
+    width: 500px;
+    margin: 4% auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .calculator {
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+  }
+  
+  .display {
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    max-width: 355px;
     height: 60px;
-    margin: 0 3px;
-    font-size: 22px;
-    font-weight: 500;
-    outline: none;
-    color: whitesmoke;
-    background-color: rgb(133, 133, 133);
-    border: none;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.700),
-                0px 2px 2px rgba(0, 0, 0, 0.700) ,
-                -2px 0px 2px rgba(0, 0, 0, 0.700),
-                0px -2px 2px rgba(0, 0, 0, 0.700),
-}
-.calc-container input:hover{
-    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.562);
-    transform: scale(1.03);
-    transition: transform 200ms ease-in-out;
-}
-.calc-container input i::after{
-    content: '';
-    width: 50px;
-    height: 4px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.5rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+    transform-origin: 0% 0%;
+    transform: translateX(11%);
+    overflow-y: hidden;
+  }
+  
+  .display:hover {
+    border: 1px solid #bbb;
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  .operators button {
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  }
+  
+  .operators button:hover {
+    background-color: #ddd;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #aaa;
+  }
+  
+  .operators button:active {
+    font-weight: bold;
+  }
+  
+  .leftPanel {
+    display: inline-block;
+  }
+  
+  .numbers button, .ce button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+  }
+  
+  .numbers button:hover {
+    background-color: #f1f1f1;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+  }
+  
+  .numbers button:active {
+    font-weight: bold;
+  }
+  
+  button.equal {
+    display: inline-block;
+    border: 1px solid #3079ED;
+    border-radius: 1px;
+    width: 17%;
+    text-align: center;
+    padding: 68px 10px;
+    margin: 10px 6px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #4d90fe;
+    transition: all .2s ease-in-out;
+    position: relative;
+  }
+  
+  button.equal:hover {
+    background-color: #307CF9;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #1857BB;
+  }
+  
+  button.equal:active {
+    font-weight: bold;
+  }
+  #del_last{
     position: absolute;
-    background-color: rgb(255, 0, 0);
-    top: 0;
-    left: 20px;
-}
+    bottom: 159px;
+    right: 26.3%;
+  }
+
+  
